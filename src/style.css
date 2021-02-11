@@ -5,7 +5,7 @@ body {
 ul {
     display: block;
     margin: 0 auto;
-    background-color: #bf590b;
+    background-color: #d65500;
     color: white;
     list-style: none;
     padding: 20px;
@@ -20,7 +20,7 @@ ul {
   }
   
 button2 {
-    color: #bf590b;
+    color: #d65500;
     font-family: monospace;
     border-radius: 10%;
     font-size: 20px;
@@ -30,7 +30,7 @@ button2 {
   }
   
 button3 {
-    color: #bf590b;
+    color: #d65500;
     font-family: monospace;
     border-radius: 10%;
     font-size: 20px;
@@ -43,8 +43,8 @@ form {
     max-width: 700px;
     margin: 0 auto;
     display: block;
-    background-color: #ededee;
-    border: 1px solid #bf590b;
+    background-color: #ffe8bc;
+    border: 1px solid #d65500;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
@@ -55,13 +55,13 @@ form {
   }
   
 button4 {
-    color: #bf590b;
+    color: #d65500;
     font-family: monospace;
     border-radius: 10%;
     font-size: 10px;
     padding: 12px;
     cursor: pointer;
-    border: 1px solid #bf590b;
+    border: 1px solid #d65500;
     display: block;
     margin: 0 auto;
     max-width: 700px;
@@ -94,12 +94,12 @@ span {
 h2 {
     max-width: 700px;
     margin: 0 auto;
-    background-color: #ededee;
+    background-color: #ffe8bc;
     text-transform: uppercase;
     text-align: center;
     padding: 10px;
     border-radius: 20px;
-    border: 1px solid #bf590b;
+    border: 1px solid #d65500;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
@@ -108,27 +108,27 @@ h2 {
 .today {
     max-width: 700px;
     margin: 0 auto;
-    background-color: #ededee;
+    background-color: #ffe8bc;
     text-align: center;
     padding: 20px;
     border-radius: 20px;
     margin-top: 150px;
     font-family: "Courier New", Courier, monospace;
     font-size: 40px;
-    border: 1px solid #bf590b;
+    border: 1px solid #d65500;
     box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
   }
   
 .week {
     max-width: 700px;
     margin: 0 auto;
-    background-color: #ededee;
+    background-color: #ffe8bc;
     text-align: center;
     padding: 50px;
     border-radius: 20px;
     margin-bottom: 300px;
     font-family: "Courier New", Courier, monospace;
-    border: 1px solid #bf590b;
+    border: 1px solid #d65500;
     box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
   }
 .description {
@@ -150,7 +150,7 @@ footer {
     text-align: left;
   }
 .btn-primary{
-background-color: #bf590b;
+background-color: #d65500;
 font-family: monospace;
 border-radius: 10%;
 font-size: 20px;
