@@ -149,4 +149,14 @@ footer {
     color: gray;
     text-align: left;
   }
+.btn-primary{
+ color: #bf590b;
+font-family: monospace;
+border-radius: 10%;
+font-size: 20px;
+padding: 2px;
+padding-left: 0px;
+cursor: pointer;   
+}
+
   
