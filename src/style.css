@@ -5,7 +5,7 @@ body {
 ul {
     display: block;
     margin: 0 auto;
-    background-color: #0e6efd;
+    background-color: #bf590b;
     color: white;
     list-style: none;
     padding: 20px;
@@ -20,7 +20,7 @@ ul {
   }
   
 button2 {
-    color: #0e6efd;
+    color: #bf590b;
     font-family: monospace;
     border-radius: 10%;
     font-size: 20px;
@@ -30,7 +30,7 @@ button2 {
   }
   
 button3 {
-    color: #0e6efd;
+    color: #bf590b;
     font-family: monospace;
     border-radius: 10%;
     font-size: 20px;
@@ -44,7 +44,7 @@ form {
     margin: 0 auto;
     display: block;
     background-color: #ededee;
-    border: 1px solid #0e6efd;
+    border: 1px solid #bf590b;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
@@ -55,13 +55,13 @@ form {
   }
   
 button4 {
-    color: #0e6efd;
+    color: #bf590b;
     font-family: monospace;
     border-radius: 10%;
     font-size: 10px;
     padding: 12px;
     cursor: pointer;
-    border: 1px solid #0e6efd;
+    border: 1px solid #bf590b;
     display: block;
     margin: 0 auto;
     max-width: 700px;
@@ -99,7 +99,7 @@ h2 {
     text-align: center;
     padding: 10px;
     border-radius: 20px;
-    border: 1px solid #0e6efd;
+    border: 1px solid #bf590b;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
@@ -115,7 +115,7 @@ h2 {
     margin-top: 150px;
     font-family: "Courier New", Courier, monospace;
     font-size: 40px;
-    border: 1px solid #0e6efd;
+    border: 1px solid #bf590b;
     box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
   }
   
@@ -128,7 +128,7 @@ h2 {
     border-radius: 20px;
     margin-bottom: 300px;
     font-family: "Courier New", Courier, monospace;
-    border: 1px solid #0e6efd;
+    border: 1px solid #bf590b;
     box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
   }
 .description {
