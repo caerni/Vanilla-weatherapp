@@ -219,7 +219,22 @@ currentLocation.addEventListener("click", getCurrentPosition);
 //6 Forecast
 function displayForecast(response){
   let forecastElement = document.querySelector("#forecast");
-  console.log(response.data);
-
+  let forecast = (response.data.list[0]);
+  console.log(forecast);
+  forecastElement.innerHTML = `<div class="week" id = "forecast">
+  <div class="row align-items-start">
+    <div class="col" id = "day1">
+      <span class="emoji1">
+      🌥
+      </span>
+      <br>
+      <strong>${Math.round(forecast.main.temp_max)}˚ </strong>
+      ${Math.round(forecast.main.temp_min)}˚ 
+      <br>
+      Monday
+    </div>
+  
+  </div> 
+</div> `;
 }
 
