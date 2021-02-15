@@ -227,10 +227,8 @@ function displayForecast(response){
   console.log(forecast);
   forecastElement.innerHTML = `
   <div class = "row align-items-start">
-    <div class="col" id = "day1">
-      <span class="emoji1">
-      🌥
-      </span>
+    <div class="col">
+      ${forecast.weather[0].icon}
       <br>
       <strong>${Math.round(forecast.main.temp_max)}˚ </strong>
       ${Math.round(forecast.main.temp_min)}˚ 
