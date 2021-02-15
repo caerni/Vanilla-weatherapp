@@ -169,8 +169,8 @@ function showTemperature(response) {
   let city = response.data.name;
   let changeCityElement = document.querySelector("h2");
   changeCityElement.innerHTML = `${city}`;
-  let lat = response.data.coord.lat;
-  let lon = response.data.coord.lon;
+  let lat = Math.round(response.data.coord.lat);
+  let lon = Math.round(response.data.coord.lon);
   let displayPosition = document.querySelector("p2");
   displayPosition.innerHTML = `Latitude = ${lat} & Longitude = ${lon}`;
   let iconElement = document.querySelector("#icon");
