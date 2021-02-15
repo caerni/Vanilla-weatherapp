@@ -180,8 +180,10 @@ function showTemperature(response) {
   descriptionElement.innerHTML =  `${description}`;
   let humidityElement = document.querySelector("#humidity");
   let hum = (response.data.main.humidity);
-  humidityElement.innerHTML = `${hum}%`; 
-
+  humidityElement.innerHTML = `Humidity = ${hum}%`; 
+  let windElement = document.querySelector("#wind");
+  let wind = (response.data.wind.speed);
+  windElement.innerHTML = `Wind Speed = ${wind}km/h`; 
 
   function tempChangeC(event) {
     let celsius = `${temperature}°C`;
