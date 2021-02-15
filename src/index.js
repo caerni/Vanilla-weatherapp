@@ -226,10 +226,10 @@ function displayForecast(response){
   let forecast = response.data.list[0];
   console.log(forecast);
   forecastElement.innerHTML = `
-  <div class="col" id = "day1">
-      <span class="emoji1">
+  <div class="col">
+      <h3>
       🌥
-      </span>
+      </h3>
       <br>
       <strong>${Math.round(forecast.main.temp_max)}˚ </strong>
       ${Math.round(forecast.main.temp_min)}˚ 
