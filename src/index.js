@@ -176,7 +176,7 @@ function showTemperature(response) {
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
   let description = (response.data.weather[0].description);
-  let descriptionElement = document.querySelector("span.#description");
+  let descriptionElement = document.querySelector("#description");
   descriptionElement.innerHTML =  `${description}`;
 
 
