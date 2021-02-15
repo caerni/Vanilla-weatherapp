@@ -222,8 +222,10 @@ currentLocation.addEventListener("click", getCurrentPosition);
 
 
 function displayForecast(response){
-  console.log(response.data.list[0]); 
+ 
   let forecastElement = document.querySelector("#forecast");
+  let forecast = response.data.list[0];
+  console.log(forecast);
  
   forecastElement.innerHTML = `<div class="col">
       ${forecast.weather[0].icon}
