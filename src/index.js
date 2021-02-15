@@ -225,13 +225,16 @@ function displayForecast(response){
   let forecastElement = document.querySelector("#forecast");
   let forecast = response.data.list[0];
   console.log(forecast);
-  forecastElement.innerHTML = `<div class="col">
+  forecastElement.innerHTML = `
+  <div class = "row align-items-start">
+    <div class="col">
       ${forecast.weather[0].icon}
       <br>
       <strong>${Math.round(forecast.main.temp_max)}˚ </strong>
       ${Math.round(forecast.main.temp_min)}˚ 
       <br>
       Monday
-    </div>`;
+    </div>
+  </div>`;
 }
 
