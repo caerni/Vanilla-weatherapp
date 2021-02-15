@@ -173,6 +173,7 @@ function showTemperature(response) {
   let lon = response.data.coord.lon;
   let displayPosition = document.querySelector("p2");
   displayPosition.innerHTML = `Latitude = ${lat} & Longitude = ${lon}`;
+  let iconElement = document.querySelector("#emoji");
 
   function tempChangeC(event) {
     let celsius = `${temperature}°C`;
