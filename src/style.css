@@ -131,7 +131,7 @@ h2 {
     border: 1px solid #d65500;
     box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
   }
-.descriptionStyle {
+.description {
     font-size: 12px;
     font-family: monospace;
     font-style: italic;
