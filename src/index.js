@@ -221,8 +221,7 @@ function displayForecast(response){
   let forecastElement = document.querySelector("#forecast");
   let forecast = (response.data.list[0]);
   console.log(forecast);
-  forecastElement.innerHTML = `<div class="week" id = "forecast">
-  <div class="row align-items-start">
+  forecastElement.innerHTML = `<div class="row align-items-start">
     <div class="col" id = "day1">
       <span class="emoji1">
       🌥
@@ -233,8 +232,6 @@ function displayForecast(response){
       <br>
       Monday
     </div>
-  
-  </div> 
-</div> `;
+  </div>`;
 }
 
