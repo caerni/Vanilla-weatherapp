@@ -219,7 +219,7 @@ currentLocation.addEventListener("click", getCurrentPosition);
 //6 Forecast
 function displayForecast(response){
   let forecastElement = document.querySelector("#forecast");
-  let forecast = (response.data.list[0]);
+  let forecast = response.data.list[0];
   console.log(forecast);
   forecastElement.innerHTML = `
   <div class="col" id = "day1">
