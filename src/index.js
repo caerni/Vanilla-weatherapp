@@ -174,6 +174,7 @@ function showTemperature(response) {
   let displayPosition = document.querySelector("p2");
   displayPosition.innerHTML = `Latitude = ${lat} & Longitude = ${lon}`;
   let iconElement = document.querySelector("#emoji");
+  iconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 
   function tempChangeC(event) {
     let celsius = `${temperature}°C`;
