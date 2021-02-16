@@ -135,6 +135,7 @@ function searchWeather(city) {
   let apiKey = "1e7103a4d94dac75ab71913871657699";
   let units = "metric";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+  
   axios.get(apiUrl).then(showTemperature);
 }
 
@@ -149,6 +150,7 @@ function searchCity(event) {
     h2.innerHTML = null;
   }
 }
+
 let cityForm = document.querySelector("#city-form");
 cityForm.addEventListener("submit", searchCity);
 
@@ -158,6 +160,7 @@ function showPosition(position) {
   let units = "metric";
   let apiKey = "1e7103a4d94dac75ab71913871657699";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
+ 
   axios.get(apiUrl).then(showTemperature);
 }
 //tempChange
@@ -178,7 +181,7 @@ function showTemperature(response) {
   iconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
   let description = (response.data.weather[0].description);
   let descriptionElement = document.querySelector("#weatherDescription");
-  descriptionElement.innerHTML =  `${description}`;
+  descriptionElement.innerHTML = `${description}`;
   let humidityElement = document.querySelector("#humidity");
   let hum = (response.data.main.humidity);
   humidityElement.innerHTML = `Humidity = ${hum}%`; 
