@@ -129,7 +129,7 @@ let small = document.querySelector("small");
 small.innerHTML = `${time} ${day} ${month} ${date} ${year}`;
 
 //2 cityForm
-function displayForecast (response){
+function displayForecast(response){
   console.log(response.data);
 }
 
