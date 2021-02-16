@@ -216,26 +216,6 @@ currentLocation.addEventListener("click", getCurrentPosition);
 
 //6 Forecast
 
-function findForecast(location){
-  let apiKey = "1e7103a4d94dac75ab71913871657699";
-  let units = "metric";
-  let apiUrl2 = `https://api.openweathermap.org/data/2.5/forecast?q=${location}&appid=${apiKey}&units=${units}`;
-  axios.get(apiUrl2).then(displayForecast);
-}
 
-function displayForecast(response){
- 
-  let forecastElement = document.querySelector("#forecast");
-  let forecast = response.data.list[0];
-  console.log(forecast);
- 
-  forecastElement.innerHTML = `<div class="col">
-      ${forecast.weather[0].icon}
-      <br>
-      <strong>${Math.round(forecast.main.temp_max)}˚ </strong>
-      ${Math.round(forecast.main.temp_min)}˚ 
-      <br>
-      Monday
-    </div>`;
-}
+
 
