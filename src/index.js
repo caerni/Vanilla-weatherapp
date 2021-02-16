@@ -227,7 +227,7 @@ currentLocation.addEventListener("click", getCurrentPosition);
 //6 Forecast
 
 function displayForecast(response){
-  console.log(response.data);
+  console.log(response.data.list[0]);
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = null;
   let forecast = null;
