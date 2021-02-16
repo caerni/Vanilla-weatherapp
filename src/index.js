@@ -169,6 +169,7 @@ function showPosition(position) {
 //tempChange
 
 function showTemperature(response) {
+  console.log(response.data);
   let temperature = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector("#tempChange");
   temperatureElement.innerHTML = `${temperature}°C`;
