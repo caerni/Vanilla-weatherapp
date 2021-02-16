@@ -129,6 +129,10 @@ let small = document.querySelector("small");
 small.innerHTML = `${time} ${day} ${month} ${date} ${year}`;
 
 //2 cityForm
+function displayForecast (response){
+  console.log(response.data);
+}
+
 
 
 function searchWeather(city) {
@@ -210,9 +214,6 @@ function showTemperature(response) {
   tempChange2.addEventListener("click", tempChangeF);
 }
 
-function displayForecast (response){
-  console.log(response.data);
-}
 
 //5geoLocation button
 
