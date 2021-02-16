@@ -216,11 +216,11 @@ currentLocation.addEventListener("click", getCurrentPosition);
 
 //6 Forecast
 
-function findForecast(city){
+function findForecast(location){
   let apiKey = "1e7103a4d94dac75ab71913871657699";
   let units = "metric";
-  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=${units}`;
-  axios.get(apiUrl).then(displayForecast);
+  let apiUrl2 = `https://api.openweathermap.org/data/2.5/forecast?q=${location}&appid=${apiKey}&units=${units}`;
+  axios.get(apiUrl2).then(displayForecast);
 }
 
 function displayForecast(response){
