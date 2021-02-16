@@ -137,6 +137,9 @@ function searchWeather(city) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
   
   axios.get(apiUrl).then(showTemperature);
+  
+  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=${units}`;
+  axios.get(apiUrl).then(displayForecast);
 }
 
 function searchCity(event) {
@@ -166,7 +169,6 @@ function showPosition(position) {
 //tempChange
 
 function showTemperature(response) {
-  console.log(response.data);
   let temperature = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector("#tempChange");
   temperatureElement.innerHTML = `${temperature}°C`;
@@ -205,6 +207,10 @@ function showTemperature(response) {
 
   let tempChange2 = document.querySelector("#fbutton");
   tempChange2.addEventListener("click", tempChangeF);
+}
+
+function displayForecast (response){
+  console.log(response.data);
 }
 
 //5geoLocation button
