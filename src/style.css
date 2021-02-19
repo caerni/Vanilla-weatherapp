@@ -177,7 +177,7 @@ h3{
   }
 
 .weather-forecast img {
-    display: block;
+    display: inline;
     margin: 0 auto;
     height: 48px;
     width: 48px;
