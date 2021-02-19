@@ -1,4 +1,5 @@
-// 1 clock/date/time
+searchWeather();
+
 let now = new Date();
 
 console.log(now);
@@ -162,6 +163,7 @@ function searchWeather(city) {
 
 }
 
+
   
 
 
@@ -244,22 +246,27 @@ function displayForecast(response){
   for (let index = 0; index < 6; index ++);{
     let forecast = response.data.list[index];
     forecastElement.innerHTML += `
-    <div class="col-2">
-      <h3>
-        ${formatHours(forecast.dt * 1000)}
-      </h3>
-      <img
-        src="http://openweathermap.org/img/wn/${
-          forecast.weather[0].icon
-        }@2x.png"
-      />
-      <div class="weather-forecast-temperature">
-        <strong>
-          ${Math.round(forecast.main.temp_max)}°
-        </strong>
-        ${Math.round(forecast.main.temp_min)}°
-      </div>
-    </div> `;
+   <div class="row align-items-start">
+        <div class="col">
+            <h3>
+            ${formatHours(forecast.dt * 1000)}
+          </h3>
+          <img
+            src="http://openweathermap.org/img/wn/${
+              forecast.weather[0].icon
+            }@2x.png"
+          />
+           <div class="weather-forecast-temperature">
+            <strong>
+              ${Math.round(forecast.main.temp_max)}°
+            </strong>
+              ${Math.round(forecast.main.temp_min)}°
+           </div>
+              
+        </div>
+      </div> 
+    
+    `;
   }
 
   
