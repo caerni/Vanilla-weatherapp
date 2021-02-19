@@ -238,6 +238,7 @@ function showTemperature(response) {
 
 
 function displayForecast(response){
+  console.log(response.data);
  
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = null;
