@@ -130,11 +130,24 @@ h2 {
   border-radius: 20px;
   margin-bottom: 300px;
   font-family: "Courier New", Courier, monospace;
-  font-size: small;;
+  font-size: small;
   border: 1px solid #d65500;
   box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
   }
-.description {
+
+.hour{
+  max-width: 20px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: small;
+  color: black;;
+
+}
+
+
+  .description {
     font-size: 20px;
     font-family: monospace;
     font-style: italic;
