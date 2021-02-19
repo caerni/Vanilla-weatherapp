@@ -246,14 +246,14 @@ function displayForecast(response){
   forecastElement.innerHTML += ` 
   <div class="hourupdate">
   <div class="row-align-items-start">
-    <div class="hour">
+    
      <h3>
      ${formatHours(forecast.dt * 1000)}
      </h3>
 
       <strong>${Math.round(forecast.main.temp_max)}°</strong> 
       ${Math.round(forecast.main.temp_min)}°
-    </div>
+    
     </div>
   </div> 
 </div>`
