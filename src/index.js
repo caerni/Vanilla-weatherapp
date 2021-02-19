@@ -187,7 +187,7 @@ function showPosition(position) {
   let apiKey = "1e7103a4d94dac75ab71913871657699";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
  
-  axios.get(apiUrl).then(showTemperature).then(showForecast);
+  axios.get(apiUrl).then(showTemperature).then(displayForecast);
 }
 //tempChange
 
@@ -236,7 +236,7 @@ function showTemperature(response) {
 
 function displayForecast(response){
  
-  let forecastElement = document.querySelector("#forecast");
+  let forecastElement = document.querySelector("#week");
   let forecast = response.data.list[0];
   
   for (let index = 0; index < 6; index ++);{
