@@ -168,6 +168,8 @@ h3{
 .container{
   max-width: 100px;
   align-content: left;
+  padding: 0;
+  margin: 0;;
 }  
 
 .weather-forecast-temperature {
