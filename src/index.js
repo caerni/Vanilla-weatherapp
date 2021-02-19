@@ -212,7 +212,7 @@ function showTemperature(response) {
   iconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
   let description = (response.data.weather[0].description);
   let descriptionElement = document.querySelector("#weatherDescription");
-  descriptionElement.innerHTML = `${description}`;
+  descriptionElement.innerHTML = `'${description}'`;
   let humidityElement = document.querySelector("#humidity");
   let hum = (response.data.main.humidity);
   humidityElement.innerHTML = `Humidity = ${hum}%`; 
