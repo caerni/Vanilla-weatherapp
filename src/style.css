@@ -164,6 +164,10 @@ h3{
     color: black;
   }
 
+.container{
+  max-width: fit-content;;
+}  
+
 .weather-forecast-temperature {
     text-align: center;
     color: rgb(135, 135, 135);
