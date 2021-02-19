@@ -174,7 +174,7 @@ function searchWeather(city) {
 function showForecast(location){
   let apiKey = "1e7103a4d94dac75ab71913871657699";
   let units = "metric";
-  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=${units}`;
+  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${location}&appid=${apiKey}&units=${units}`;
   axios.get(apiUrl).then(displayForecast);
 }
   
