@@ -248,19 +248,21 @@ function displayForecast(response){
   for (let index = 0; index < 6; index++) {
   forecast = response.data.list[index];
   forecastElement.innerHTML += ` 
-  <div class="hourupdate">
-   <h3>
-     ${formatHours(forecast.dt * 1000)}
-    </h3>
-    <img
-    src="http://openweathermap.org/img/wn/${
-      forecast.weather[0].icon
-    }@2x.png"
-  />
-      <strong>${Math.round(forecast.main.temp_max)}°</strong> 
-      ${Math.round(forecast.main.temp_min)}°
-    
-    
+  <div class ="container">
+   <div class = "col-6">
+      <div class="hourupdate">
+       <h3>
+         ${formatHours(forecast.dt * 1000)}
+        </h3>
+        <img
+        src="http://openweathermap.org/img/wn/${
+          forecast.weather[0].icon
+        }@2x.png"
+        />
+        <strong>${Math.round(forecast.main.temp_max)}°</strong> 
+        ${Math.round(forecast.main.temp_min)}°
+      </div>
+    </div>
   </div>`
  
 }
