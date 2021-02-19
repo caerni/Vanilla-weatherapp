@@ -71,20 +71,7 @@ button4 {
     right: 130px;
   }
   
-p2 {
-    display: block;
-    margin: 0 auto;
-    color: black;
-    list-style: none;
-    padding: 20px;
-    max-width: 200px;
-    text-align: center;
-    border-radius: 20px;
-    font-family: monospace;
-    position: fixed;
-    top: 300px;
-    right: 100px;
-  }
+
 span {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -151,12 +138,26 @@ h3{
 
 }
 
-
-  .description {
+.description {
     font-size: 20px;
     font-family: monospace;
     font-style: italic;
   }
+
+.latLon {
+    display: block;
+    margin: 0 auto;
+    color: black;
+    list-style: none;
+    padding: 20px;
+    max-width: 200px;
+    text-align: center;
+    border-radius: 20px;
+    font-family: monospace;
+    position: fixed;
+    top: 300px;
+    right: 100px;
+}
 
   
 .currentLocationTest {
