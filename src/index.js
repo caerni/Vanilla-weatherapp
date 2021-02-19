@@ -238,9 +238,9 @@ function displayForecast(response){
  
   let forecastElement = document.querySelector("#forecast");
   let forecast = response.data.list[0];
-  console.log(forecast);
-
-  forecastElement.innerHTML += `
+  
+  for (let index = 0; index < 6; index ++);{
+    forecastElement.innerHTML += `
     <div class="col-2">
       <h3>
         ${formatHours(forecast.dt * 1000)}
@@ -257,6 +257,9 @@ function displayForecast(response){
         ${Math.round(forecast.main.temp_min)}°
       </div>
     </div> `;
+  }
+
+  
 }
 
 //5geoLocation button
