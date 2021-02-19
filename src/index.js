@@ -133,7 +133,7 @@ small.innerHTML = `${time} ${day} ${month} ${date} ${year}`;
 
 
 function formatHours(timestamp){
-  let date = new date(timestamp)
+  let date = newdate(timestamp)
   let hours = date.getHours();
   if (hours < 10){
     hours = `0${hours}`;
