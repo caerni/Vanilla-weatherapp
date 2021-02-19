@@ -190,9 +190,6 @@ function showPosition(position) {
  
   axios.get(apiUrl).then(showTemperature).then(searchWeather);
 
-  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=${units}`;
-  axios.get(apiUrl).then(displayForecast);
-
 }
 //tempChange
 
@@ -268,10 +265,19 @@ function displayForecast(response){
   
 
 //5geoLocation button
+function showPositionForecast(location){
+  console.log(position);
+ 
+}
 
 function getCurrentPosition() {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(showPosition);
+}
+
+function getCurrentPosition2() {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition2(showPositionForecast);
 }
 
 let currentLocation = document.querySelector("#current-location-button");
