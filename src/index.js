@@ -249,7 +249,7 @@ function displayForecast(response){
   forecast = response.data.list[index];
   forecastElement.innerHTML += ` 
   <div class="container">
-   <div class="row>
+   <div class="row">
      <div class="hourupdate">
        <img
         src="http://openweathermap.org/img/wn/${
