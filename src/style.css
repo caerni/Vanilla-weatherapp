@@ -165,7 +165,7 @@ h3{
   }
 
 .container{
-  max-width: fit-content;
+  max-width: 100px;
   align-content: left;
 }  
 
