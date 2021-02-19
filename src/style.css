@@ -103,6 +103,7 @@ h2 {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+    font-size: smaller;
   }
   
 .today {
