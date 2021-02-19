@@ -130,6 +130,8 @@ small.innerHTML = `${time} ${day} ${month} ${date} ${year}`;
 
 //2 cityForm
 
+//this is not working
+
 function displayForecast(response){
   console.log(response.data);
   let forecastElement = document.querySelector("#forecast");
@@ -240,6 +242,7 @@ function showTemperature(response) {
   let tempChange2 = document.querySelector("#fbutton");
   tempChange2.addEventListener("click", tempChangeF);
 }
+
 
 
 //5geoLocation button
