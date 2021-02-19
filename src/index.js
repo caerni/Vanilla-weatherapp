@@ -128,34 +128,24 @@ let small = document.querySelector("small");
 
 small.innerHTML = `${time} ${day} ${month} ${date} ${year}`;
 
-//2 cityForm
 
-//this is not working
 
-function displayForecast(response){
- 
-  let forecastElement = document.querySelector("#forecast");
-  let forecast = response.data.list[0];
-  console.log(forecast);
 
-  forecastElement.innerHTML += `
-    <div class="col-2">
-      <h3>
-        ${formatHours(forecast.dt * 1000)}
-      </h3>
-      <img
-        src="http://openweathermap.org/img/wn/${
-          forecast.weather[0].icon
-        }@2x.png"
-      />
-      <div class="weather-forecast-temperature">
-        <strong>
-          ${Math.round(forecast.main.temp_max)}°
-        </strong>
-        ${Math.round(forecast.main.temp_min)}°
-      </div>
-    </div> `;
+function formatHours(timestamp){
+  let date = new date(timestamp)
+  let hours = date.getHours();
+  if (hours < 10){
+    hours = `0${hours}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10){
+    minutes = `0${minutes}`
+  }
+  return  `${hours}:${minutes}`;
+
 }
+
+
 
 
 
@@ -167,14 +157,11 @@ function searchWeather(city) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
   axios.get(apiUrl).then(showTemperature);
 
+  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=${units}`;
+  axios.get(apiUrl).then(displayForecast);
+
 }
 
-function showForecast(location){
-  let apiKey = "1e7103a4d94dac75ab71913871657699";
-  let units = "metric";
-  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${location}&appid=${apiKey}&units=${units}`;
-  axios.get(apiUrl).then(displayForecast);
-}
   
 
 
@@ -247,6 +234,30 @@ function showTemperature(response) {
 }
 
 
+function displayForecast(response){
+ 
+  let forecastElement = document.querySelector("#forecast");
+  let forecast = response.data.list[0];
+  console.log(forecast);
+
+  forecastElement.innerHTML += `
+    <div class="col-2">
+      <h3>
+        ${formatHours(forecast.dt * 1000)}
+      </h3>
+      <img
+        src="http://openweathermap.org/img/wn/${
+          forecast.weather[0].icon
+        }@2x.png"
+      />
+      <div class="weather-forecast-temperature">
+        <strong>
+          ${Math.round(forecast.main.temp_max)}°
+        </strong>
+        ${Math.round(forecast.main.temp_min)}°
+      </div>
+    </div> `;
+}
 
 //5geoLocation button
 
