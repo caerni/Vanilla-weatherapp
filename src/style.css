@@ -136,13 +136,14 @@ h2 {
   }
 
 .col-2 {
-  max-width: 10px;
+  max-width:10px;
   margin: 0 auto;
   text-align: center;
   padding: 10px;
   font-family: "Courier New", Courier, monospace;
   font-size: small;
   color: black;;
+
 }
 
 
