@@ -238,27 +238,30 @@ function showTemperature(response) {
 
 
 function displayForecast(response){
+ let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = null;
+  let forecast = null;
 
-  let forecastElement = document.querySelector("#forecast");
-  let forcast = response.data.list[0];
-  console.log(forcast);
-  
-  forecastElement.innerHTML =  ` 
-  <div class="week">
-    <div class="row-align-items-start">
-     <div class="col">
-      <img class="icon2"
-        src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"
-      />
-
-      <strong>${Math.round(forcast.main.temp_max)}°</strong> 
-      ${Math.round(forcast.main.temp_min)}°
-    
-     </div>
-   </div> 
-  </div>`
- 
+  for (let index = 0; index < 6; index++) {
+    forecast = response.data.list[index];
+    forecastElement.innerHTML += `
+    <div class="col-2">
+      <h3>
+        ${formatHours(forecast.dt * 1000)}
+      </h3>
+     
+      <div class="weather-forecast-temperature">
+        <strong>
+          ${Math.round(forecast.main.temp_max)}°
+        </strong>
+        ${Math.round(forecast.main.temp_min)}°
+      </div>
+    </div>
+  `;
+  }
 }
+ 
+
 
   
 
