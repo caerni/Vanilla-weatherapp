@@ -238,10 +238,12 @@ function showTemperature(response) {
 
 
 function displayForecast(response){
-  console.log(response.data);
-  let forecast = document.querySelector("#forecast");
+
+  let forecastElement = document.querySelector("#forecast");
+  let forcast = response.data.list[0];
+  console.log(forcast);
   
-  forecast.innerHTML =  ` 
+  forecastElement.innerHTML =  ` 
   <div class="week">
   <div class="row align-items-start">
     <div class="col">
@@ -252,7 +254,8 @@ function displayForecast(response){
       🌥
       </span>
       <br>
-      11°
+      <strong>${forcast.main.temp_max}°</strong> 
+      ${forcast.main.temp_min}
       <br>
       Monday
     </div>
