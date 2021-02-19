@@ -238,30 +238,30 @@ function showTemperature(response) {
 
 
 function displayForecast(response){
- let forecastElement = document.querySelector("#forecast");
+
+  let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = null;
   let forecast = null;
 
   for (let index = 0; index < 6; index++) {
     forecast = response.data.list[index];
-    forecastElement.innerHTML += `
-    <div class="col-2">
+    forecastElement.innerHTML +=  ` 
+  <div class="week">
+    <div class="row-align-items-start">
+     <div class="col">
       <h3>
-        ${formatHours(forecast.dt * 1000)}
+       ${formatHours(forecast.dt * 1000)}
       </h3>
-     
-      <div class="weather-forecast-temperature">
-        <strong>
-          ${Math.round(forecast.main.temp_max)}°
-        </strong>
-        ${Math.round(forecast.main.temp_min)}°
+        <div class="weather-forecast-temperature">
+          <strong>${Math.round(forcast.main.temp_max)}°</strong> 
+          ${Math.round(forcast.main.temp_min)}°
+        </div>
       </div>
-    </div>
-  `;
-  }
-}
+   </div> 
+  </div>`
+ }
  
-
+}
 
   
 
