@@ -245,7 +245,7 @@ function displayForecast(response){
   
   forecastElement.innerHTML =  ` 
   <div class="week">
-    <div class="row align-items-start">
+    <div class="row-align-items-start">
      <div class="col">
       <img
         src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"
