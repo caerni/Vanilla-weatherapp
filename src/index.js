@@ -245,16 +245,15 @@ function displayForecast(response){
   
   forecastElement.innerHTML =  ` 
   <div class="week">
-          <img
-            src="http://openweathermap.org/img/wn/${
-            forecast.weather[0].icon
-            }@2x.png"
-          /> 
-          <div class="temperature">
-            <strong>${Math.round(forcast.main.temp_max)}°</strong> 
-            ${Math.round(forcast.main.temp_min)}°
-          </div>
-    </div>`
+    <div class="row align-items-start">
+     <div class="col">
+
+      <strong>${Math.round(forcast.main.temp_max)}°</strong> 
+      ${Math.round(forcast.main.temp_min)}°
+    
+     </div>
+   </div> 
+  </div>`
  
 }
 
