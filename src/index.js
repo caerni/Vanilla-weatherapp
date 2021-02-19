@@ -247,7 +247,12 @@ function displayForecast(response){
   <div class="week">
   <div class="row align-items-start">
     <div class="col">
-      
+
+      <img
+        src="http://openweathermap.org/img/wn/${
+          forecast.weather[0].icon
+        }@2x.png"
+      /> 
      <strong>${Math.round(forcast.main.temp_max)}°</strong> 
       ${Math.round(forcast.main.temp_min)}°
     </div>
