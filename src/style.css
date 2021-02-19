@@ -165,7 +165,7 @@ h3{
   }
 
 .container{
-  max-width: fit-content;;
+  max-width: fit-content;
 }  
 
 .weather-forecast-temperature {
@@ -179,8 +179,6 @@ h3{
   }
 
 .weather-forecast img {
-    display: inline-block;
-    margin: 0 auto;
     height: 48px;
     width: 48px;
   }
