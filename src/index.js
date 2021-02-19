@@ -249,13 +249,11 @@ function displayForecast(response){
   <div class="week">
     <div class="row-align-items-start">
      <div class="col">
-      <h3>
-       ${formatHours(forecast.dt * 1000)}
-      </h3>
-        <div class="weather-forecast-temperature">
-          <strong>${Math.round(forcast.main.temp_max)}°</strong> 
-          ${Math.round(forcast.main.temp_min)}°
-        </div>
+      ${formatHours(forecast.dt * 1000)}
+      
+      <strong>${Math.round(forcast.main.temp_max)}°</strong> 
+      ${Math.round(forcast.main.temp_min)}°
+        
       </div>
    </div> 
   </div>`
