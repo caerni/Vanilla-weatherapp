@@ -248,7 +248,6 @@ function displayForecast(response){
   for (let index = 0; index < 6; index++) {
   forecast = response.data.list[index];
   forecastElement.innerHTML += ` 
-  <div class="container">
      <div class="col-2">
        <img
         src="http://openweathermap.org/img/wn/${
@@ -261,8 +260,7 @@ function displayForecast(response){
         <div class="weather-forecast-temperature">
           <strong>${Math.round(forecast.main.temp_max)}°</strong> ${Math.round(forecast.main.temp_min)}°
         </div>
-     </div>
-  </div>`
+     </div>`
  
 }
 }
