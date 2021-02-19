@@ -206,7 +206,7 @@ function showTemperature(response) {
   changeCityElement.innerHTML = `${city}`;
   let lat = Math.round(response.data.coord.lat);
   let lon = Math.round(response.data.coord.lon);
-  let displayPosition = document.querySelector("p2");
+  let displayPosition = document.querySelector("#latLon");
   displayPosition.innerHTML = `Latitude = ${lat} & Longitude = ${lon}`;
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
@@ -250,7 +250,7 @@ function displayForecast(response){
   forecastElement.innerHTML += ` 
   <div class="container">
    <div class="row">
-     <div class="col">
+     <div class="col-2">
        <img
         src="http://openweathermap.org/img/wn/${
           forecast.weather[0].icon
