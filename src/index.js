@@ -289,4 +289,4 @@ function getCurrentPosition2() {
 }
 
 let currentLocation = document.querySelector("#current-location-button");
-currentLocation.addEventListener("click", get.(getCurrentPosition).then(getCurrentPosition2));
+currentLocation.addEventListener("click", getCurrentPosition, getCurrentPosition2);
