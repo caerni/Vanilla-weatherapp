@@ -189,6 +189,9 @@ function showPosition(position) {
  
   axios.get(apiUrl).then(showTemperature).then(searchWeather);
 
+  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=${units}`;
+  axios.get(apiUrl).then(displayForecast);
+
 }
 //tempChange
 
