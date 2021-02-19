@@ -166,12 +166,15 @@ h3{
     color: black;
   }
 
-.icon2 {
-    display: block;
-    margin: 0 auto;
-    height: 48px;
-    width: 48px;
-}  
+.weather-forecast-temperature {
+    text-align: center;
+    color: rgb(135, 135, 135);
+    font-size: 13px;
+    font-weight: 400;
+    height: auto;
+    line-height: 15px;
+    white-space: nowrap;
+  }
 
  
 
