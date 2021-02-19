@@ -248,12 +248,10 @@ function displayForecast(response){
     forecastElement.innerHTML +=  ` 
   <div class="week">
     <div class="row-align-items-start">
-     <div class="col">
-       <strong>${Math.round(forcast.main.temp_max)}°</strong> 
+     
+      <strong>${Math.round(forcast.main.temp_max)}°</strong> 
       ${Math.round(forcast.main.temp_min)}°
-        
-      </div>
-   </div> 
+    </div> 
   </div>`;
  }
  
