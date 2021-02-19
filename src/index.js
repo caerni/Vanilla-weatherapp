@@ -240,20 +240,23 @@ function showTemperature(response) {
 function displayForecast(response){
 
   let forecastElement = document.querySelector("#forecast");
-  forecastElement.innerHTML = null;
-  let forecast = null;
-
-  for (let index = 0; index < 6; index++) {
-    forecast = response.data.list[index];
-    forecastElement.innerHTML +=  ` 
+  let forcast = response.data.list[0];
+  console.log(forcast);
+  
+  forecastElement.innerHTML =  ` 
   <div class="week">
-    <div class="row-align-items-start">
-     
-      <strong>${Math.round(forcast.main.temp_max)}°</strong> 
+  <div class="row align-items-start">
+    <div class="col">
+     <h3>
+     12.00
+     </h3>
+
+     <strong>${Math.round(forcast.main.temp_max)}°</strong> 
       ${Math.round(forcast.main.temp_min)}°
-    </div> 
-  </div>`;
- }
+    </div>
+    </div>
+  </div> 
+</div>`
  
 }
 
