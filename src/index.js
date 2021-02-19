@@ -254,10 +254,9 @@ function displayForecast(response){
       🌥
       </span>
       <br>
-      <strong>${forcast.main.temp_max}°</strong> 
-      ${forcast.main.temp_min}
+      <strong>${Math.round(forcast.main.temp_max)}°</strong> 
+      ${Math.round(forcast.main.temp_min)}
       <br>
-      Monday
     </div>
     </div>
   </div> 
