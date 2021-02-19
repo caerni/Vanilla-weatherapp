@@ -250,7 +250,7 @@ function displayForecast(response){
   forecastElement.innerHTML += ` 
   <div class="container">
    <div class="row">
-     <div class="hourupdate">
+     <div class="col">
        <img
         src="http://openweathermap.org/img/wn/${
           forecast.weather[0].icon
