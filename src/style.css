@@ -127,7 +127,7 @@ h3{
   }
 
 .col-2 {
-  max-width: 20px;
+  max-width: 70px;
   text-align: center;
   padding: 10px;
   font-family: "Courier New", Courier, monospace;
@@ -166,6 +166,7 @@ h3{
 
 .container{
   max-width: fit-content;
+  align-content: left;
 }  
 
 .weather-forecast-temperature {
