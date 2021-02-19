@@ -251,7 +251,7 @@ function displayForecast(response){
      12.00
      </h3>
 
-    <img  src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"/>
+    <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"/>
       
      <strong>${Math.round(forcast.main.temp_max)}°</strong> 
       ${Math.round(forcast.main.temp_min)}°
