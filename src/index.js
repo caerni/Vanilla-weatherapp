@@ -239,38 +239,30 @@ function showTemperature(response) {
 
 function displayForecast(response){
   console.log(response.data);
+  let forecast = document.querySelector("#forecast");
+  
+  forecast.innerHTML =  ` 
+  <div class="week">
+  <div class="row align-items-start">
+    <div class="col">
+     <h3>
+     12.00
+     </h3>
+      <span class="emoji">
+      🌥
+      </span>
+      <br>
+      11°
+      <br>
+      Monday
+    </div>
+    </div>
+  </div> 
+</div>`
  
-  let forecastElement = document.querySelector("#forecast");
-  forecastElement.innerHTML = null;
-  let forecast = null;
-
-
-  for (let index = 0; index < 6; index ++);{
-    let forecast = response.data.list[index];
-    forecastElement.innerHTML += `
-    <div class="row align-items-start">
-        <div class="col">
-            <h3>
-            ${formatHours(forecast.dt * 1000)}
-          </h3>
-          <img
-            src="http://openweathermap.org/img/wn/${
-              forecast.weather[0].icon
-            }@2x.png"
-          />
-           <div class="weather-forecast-temperature">
-            <strong>
-              ${Math.round(forecast.main.temp_max)}°
-            </strong>
-              ${Math.round(forecast.main.temp_min)}°
-           </div>
-              
-        </div>
-      </div>`;
-  }
+}
 
   
-}
 
 //5geoLocation button
 
