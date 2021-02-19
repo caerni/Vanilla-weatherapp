@@ -265,8 +265,15 @@ function displayForecast(response){
   
 
 //5geoLocation button
-function showPositionForecast(location){
-  console.log(position);
+function showPositionForecast(position){
+  let latitude = position.coords.latitude;
+  let longitude = position.coords.longitude;
+  let units = "metric";
+  let apiKey = "1e7103a4d94dac75ab71913871657699";
+  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
+  
+  axios.get(apiUrl).then(displayForecast);
+ 
  
 }
 
