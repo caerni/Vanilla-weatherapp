@@ -279,7 +279,9 @@ function getCurrentPosition() {
 let currentLocation = document.querySelector("#current-location-button");
 currentLocation.addEventListener("click", getCurrentPosition);
 
-search("London");
+searchWeather("q=London");
+
+
 
 
 
