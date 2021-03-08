@@ -129,7 +129,7 @@ let small = document.querySelector("small");
 
 small.innerHTML = `${time} ${day} ${month} ${date} ${year}`;
 
-searchWeather("q=London");
+
 
 function formatHours(timestamp) {
   let date = new Date(timestamp);
@@ -279,8 +279,8 @@ function getCurrentPosition() {
 let currentLocation = document.querySelector("#current-location-button");
 currentLocation.addEventListener("click", getCurrentPosition);
 
-let city = "London";
 
+let city = getCurrentPosition();
 
 
 
