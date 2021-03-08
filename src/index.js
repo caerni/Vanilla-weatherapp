@@ -129,7 +129,7 @@ let small = document.querySelector("small");
 
 small.innerHTML = `${time} ${day} ${month} ${date} ${year}`;
 
-
+searchWeather("q=London");
 
 function formatHours(timestamp) {
   let date = new Date(timestamp);
